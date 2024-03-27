@@ -8,6 +8,7 @@ import base64
 from PIL import Image
 
 
+STREAMLIT_SERVER_ENABLE_STATIC_SERVING=true
 STREAMLIT_STATIC_PATH = pathlib.Path(st.__path__[0]) / 'static'
 
 DOWNLOADS_PATH = (STREAMLIT_STATIC_PATH / "downloads")
