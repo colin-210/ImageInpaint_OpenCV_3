@@ -8,11 +8,11 @@ import base64
 from PIL import Image
 
 
-STREAMLIT_STATIC_PATH = pathlib.Path(st.__path__[0]) / 'static'
+#STREAMLIT_STATIC_PATH = pathlib.Path(st.__path__[0]) / 'static'
 
-DOWNLOADS_PATH = (STREAMLIT_STATIC_PATH / "downloads")
-if not DOWNLOADS_PATH.is_dir():
-    DOWNLOADS_PATH.mkdir()
+#DOWNLOADS_PATH = (STREAMLIT_STATIC_PATH / "downloads")
+#if not DOWNLOADS_PATH.is_dir():
+#    DOWNLOADS_PATH.mkdir()
 
 
 def get_image_download_link(img, filename, text):
