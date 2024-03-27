@@ -8,10 +8,10 @@ import base64
 from PIL import Image
 
 
-STREAMLIT_SERVER_ENABLE_STATIC_SERVING=True
-STREAMLIT_STATIC_PATH = pathlib.Path(st.__path__[0]) / 'static'
 
-DOWNLOADS_PATH = (STREAMLIT_STATIC_PATH / "downloads")
+#STREAMLIT_STATIC_PATH = pathlib.Path(st.__path__[0]) / 'static'
+
+#DOWNLOADS_PATH = (STREAMLIT_STATIC_PATH / "downloads")
 #if not DOWNLOADS_PATH.is_dir():
 #    DOWNLOADS_PATH.mkdir()
 
@@ -51,7 +51,8 @@ if uploaded_file is not None:
                               height=h_,
                               width=w_,
                               drawing_mode='freedraw',
-                              key='canvas',)
+                              key='canvas',
+                             )
     stroke = canvas_result.image_data
 
     if stroke is not None:
